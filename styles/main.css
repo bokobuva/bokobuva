@@ -1,31 +1,30 @@
 :root {
-    --bg-color: #FFFEFB;
-    --typeSpeed: 1.5s;
-    --steps: 7;
-    --black: #242526;
-    --red: #ED4337;
+  --bg-color: #fffefb;
+  --typeSpeed: 1.5s;
+  --steps: 7;
+  --black: #242526;
+  --red: #ed4337;
 }
 
 * {
-    margin: 0;
-    border-color: #1C1C1C;
+  margin: 0;
+  border-color: #1c1c1c;
 }
 
 body {
-    box-sizing: border-box;
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: var(--bg-color);
-    font-family: 'Nunito', sans-serif;
-    position: absolute;
+  box-sizing: border-box;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--bg-color);
+  font-family: "Nunito", sans-serif;
+  position: absolute;
 }
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1,
@@ -40,139 +39,143 @@ textarea,
 input,
 span,
 a {
-    color: var(--black);
+  color: var(--black);
 }
 
 body header,
 body main {
-    width: 28%;
-    min-height: 100%;
+  width: 28%;
+  min-height: 100%;
+}
+
+body > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body section {
-    width: 44%;
-    margin: auto 0;
-    transform: translateY(-50px);
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+  width: 44%;
+  margin: auto 0;
+  transform: translateY(-50px);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 body header {
-    padding-left: 3vw;
+  padding-left: 3vw;
 }
 
 body main {
-
-    padding-right: 3vw;
+  padding-right: 3vw;
 }
 
 body header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body header figure {
-    min-width: 100%;
-    min-height: 1.17em;
-    position: relative;
-    margin: 0 0 8px 0;
-    align-self: start;
-    overflow: hidden;
+  min-width: 100%;
+  min-height: 1.17em;
+  position: relative;
+  margin: 0;
+  align-self: start;
+  overflow: hidden;
 }
 
 body header figure label {
-    width: max-content;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  width: max-content;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 body header h3 {
-    margin: 0;
+  margin: 0;
 }
 
-
 .header-1 {
-    animation: fadeInHeader1 1s linear 1.5s forwards;
+  animation: fadeInHeader1 1s linear 1.5s forwards;
 }
 
 .header-2 {
-    animation: fadeInHeader2 1s linear 2s forwards;
+  animation: fadeInHeader2 1s linear 2s forwards;
 }
 
 .header-3 {
-    animation: fadeInHeader3 1s linear 2.5s forwards;
+  animation: fadeInHeader3 1s linear 2.5s forwards;
 }
 
 .dot {
-    color: var(--red);
+  color: var(--red);
 }
 
 body header h1 {
-    margin: 0;
-    font-size: 58px;
-    line-height: 58px;
+  margin: 0;
+  font-size: 58px;
+  line-height: 58px;
 }
 
 body header h1 span {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 500;
+  font-family: "Comfortaa", cursive;
+  font-weight: 500;
 }
 
 .comforta {
-    font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 
-body section h4 {
-    color: var(--red);
-    font-weight: 900;
+body article section h4 {
+  color: var(--red);
+  font-weight: 900;
 }
 
-body section h4,
-body section h3 {
-    animation: fadeIn .7s linear 3s forwards;
+body article section h4,
+body article section h3 {
+  animation: fadeIn 0.7s linear 3s forwards;
 }
 
-body section h3 {
-    display: none;
-    text-align: center;
-    font-weight: 600;
+body article section h3 {
+  display: none;
+  text-align: center;
+  font-weight: 600;
 }
 
 body main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 body main article h5 {
-    animation: fadeIn .7s linear 3.5s forwards;
+  animation: fadeIn 0.7s linear 3.5s forwards;
 }
 
 body main article #email {
-    animation: fadeIn .7s linear 3.8s forwards;
+  animation: fadeIn 0.7s linear 3.8s forwards;
 }
 
 body main article summary {
-    animation: fadeIn .7s linear 4s forwards;
+  animation: fadeIn 0.7s linear 4s forwards;
 }
 
 body main footer {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
 }
 
 body main article,
 body main footer {
-    max-width: 320px;
+  max-width: 320px;
 }
 
 .bokobuva-header,
-body section h4,
+body article section h4,
 body main article h5,
 body main article #email,
 body main article summary,
@@ -182,50 +185,59 @@ body main footer #linkedin,
 body main footer #twitter,
 body main footer #github,
 body section h3 {
-    opacity: 0;
+  opacity: 0;
 }
 
 body main article:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 body main article #cv {
-    width: max-content;
-    align-self: flex-end;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
+  width: max-content;
+  align-self: flex-end;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
 }
 
-body main article #cv p {
-    align-self: flex-end;
-    font-size: 12px;
-    font-weight: 800;
-    transform: scale(0);
-    animation: popIn .7s linear 4.3s forwards;
+body article #cv p {
+  align-self: flex-end;
+  color: var(--red);
+  font-size: 24px;
+  font-weight: 800;
+  transform: scale(0);
+  animation: popIn 0.7s linear 4.3s forwards;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+body article #cv p:hover {
+  background-color: var(--red);
+  color: var(--black);
 }
 
 body main article #github {
-    animation: fadeIn .3s linear 4.5s forwards;
+  animation: fadeIn 0.3s linear 4.5s forwards;
 }
 
 body main article #twitter {
-    animation: fadeIn .3s linear 4.8s forwards;
+  animation: fadeIn 0.3s linear 4.8s forwards;
 }
 
 body main article #linkedin {
-    animation: fadeIn .3s linear 5.1s forwards;
+  animation: fadeIn 0.3s linear 5.1s forwards;
 }
 
 body main article #instagram {
-    animation: fadeIn .3s linear 5.4s forwards;
+  animation: fadeIn 0.3s linear 5.4s forwards;
 }
 
 body main article #facebook {
-    animation: fadeIn .3s linear 5.7s forwards;
+  animation: fadeIn 0.3s linear 5.7s forwards;
 }
 
 body main h5,
@@ -234,185 +246,184 @@ body main h3,
 body main h2,
 body main h1,
 body main p {
-    text-align: right;
+  text-align: right;
 }
 
 body main article h5 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 body main article h3 span,
 body main article h5 {
-    color: var(--red);
+  color: var(--red);
 }
 
 body main article a h3:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
 body main article footer a {
-    font-size: 24px;
-    margin-left: 16px;
+  font-size: 24px;
+  margin-left: 16px;
 }
 
 body main article footer a:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInHeader1 {
-    to {
-        opacity: 0.1;
-    }
+  to {
+    opacity: 0.1;
+  }
 }
 
 @keyframes fadeInHeader2 {
-    to {
-        opacity: 0.5;
-    }
+  to {
+    opacity: 0.5;
+  }
 }
 
 @keyframes fadeInHeader3 {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes popIn {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    80% {
-        transform: scale(1.2);
-    }
+  80% {
+    transform: scale(1.2);
+  }
 
-    90% {
-        transform: scale(0.9);
-    }
+  90% {
+    transform: scale(0.9);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 768px) {
-    body {
-        width: 100vw;
-        min-height: 100vh;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 20px;
-    }
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
 
-    body header,
-    body section,
-    body main {
-        width: 100%;
-        padding: 0;
-    }
+  body header,
+  body section,
+  body main {
+    width: 100%;
+    padding: 0;
+  }
 
-    body header {
-        flex-direction: column-reverse;
-    }
+  body header {
+    flex-direction: column-reverse;
+  }
 
-    body header figure:first-child {
-        margin-left: 5px;
-    }
+  body header figure:first-child {
+    margin-left: 5px;
+  }
 
-    body header figure:first-child {
-        opacity: 0;
-        animation: fadeIn .2s linear 1.1s forwards;
-    }
+  body header figure:first-child {
+    opacity: 0;
+    animation: fadeIn 0.2s linear 1.1s forwards;
+  }
 
-    body header figure .header-1 {
-        animation-delay: .5s;
-    }
+  body header figure .header-1 {
+    animation-delay: 0.5s;
+  }
 
-    body header figure .header-2 {
-        animation-delay: .7s;
-    }
+  body header figure .header-2 {
+    animation-delay: 0.7s;
+  }
 
-    body header figure .header-3 {
-        animation-delay: .9s;
-    }
+  body header figure .header-3 {
+    animation-delay: 0.9s;
+  }
 
-    body section {
-        transform: translateY(0);
-        margin: 20px 0;
-    }
+  body section {
+    transform: translateY(0);
+    margin: 20px 0;
+  }
 
-    body section h4 {
-        animation-delay: 1.3s;
-    }
+  body section h4 {
+    animation-delay: 1.3s;
+  }
 
-    body section h3 {
-        animation-delay: 1.5s;
-    }
+  body section h3 {
+    animation-delay: 1.5s;
+  }
 
-    body main article #get-in-touch {
-        animation-delay: 1.7s;
-    }
+  body main article #get-in-touch {
+    animation-delay: 1.7s;
+  }
 
-    body main article #email {
-        animation-delay: 1.9s;
-        margin-bottom: 20px;
-    }
+  body main article #email {
+    animation-delay: 1.9s;
+    margin-bottom: 20px;
+  }
 
-    body main article summary {
-        animation-delay: 2.1s;
-    }
+  body main article summary {
+    animation-delay: 2.1s;
+  }
 
-    body main footer #github {
-        animation-delay: 2.5s;
-    }
+  body main footer #github {
+    animation-delay: 2.5s;
+  }
 
-    body main footer #twitter {
-        animation-delay: 2.7s;
-    }
+  body main footer #twitter {
+    animation-delay: 2.7s;
+  }
 
-    body main footer #linkedin {
-        animation-delay: 2.9s;
-    }
+  body main footer #linkedin {
+    animation-delay: 2.9s;
+  }
 
-    body main footer #instagram {
-        animation-delay: 3.1s;
-    }
+  body main footer #instagram {
+    animation-delay: 3.1s;
+  }
 
-    body main footer #facebook {
-        animation-delay: 3.3s;
-    }
+  body main footer #facebook {
+    animation-delay: 3.3s;
+  }
 }
 
 @media (max-width: 500px) {
+  body header figure .bokobuva-header {
+    font-size: 32px;
+    line-height: 36px;
+  }
 
-    body header figure .bokobuva-header {
-        font-size: 32px;
-        line-height: 36px;
-    }
+  body section h4 {
+    font-size: 14px;
+  }
 
-    body section h4 {
-        font-size: 14px;
-    }
+  body section h3 {
+    font-size: 16px;
+  }
 
-    body section h3 {
-        font-size: 16px;
-    }
+  body main article #get-in-touch {
+    font-size: 12px;
+  }
 
-    body main article #get-in-touch {
-        font-size: 12px;
-    }
+  body main article #email {
+    margin-bottom: 20px;
+  }
 
-    body main article #email {
-        margin-bottom: 20px;
-    }
-
-    body main article summary {
-        font-size: 12px;
-    }
+  body main article summary {
+    font-size: 12px;
+  }
 }
